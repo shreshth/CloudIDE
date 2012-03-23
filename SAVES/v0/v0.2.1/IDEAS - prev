@@ -1,0 +1,13 @@
+NEXT STEPS:
+Options on clients side. Client execution initally only contains the host and port. Then, client is asked option.
+a. Can enter file to send to server so server can store remotely ("send A.c"). Need to ensure source file name is consistent in server and client.
+b. Can ask server to compile a source file it has locally stored and store the executable also locally in server ("compile A.c A.exe"). Again need to ensure file name of executable is consistent.
+c. Can ask server to execute an executable and return the text of the result to be displayed in stdout ("run A.exe")
+
+LONGER-TERM
+a. Redirecting stdin and stdout
+b. Compile options, including multi-file compilation
+c. Security (username + pw) and directories for each user
+
+HOW TO
+Use Ish from 217

@@ -1,0 +1,8 @@
+ATTEMPT 1
+
+client.c and server.c interact with methods in common.c
+Client sends a file to server. Server stores it locally using a name that is linked to the socket it is using to communicate with the client. It then compiles it using gcc, using the same name, minus the ".c" part. Then it sends it back to the client.
+
+BUG: server gets file and compiles it fine locally, but there is an error in sending it back to client because I don't know how to read the contents of a binary file since fread() encounters a premature EOF in a binary executable. 
+
+

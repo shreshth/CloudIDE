@@ -1,0 +1,11 @@
+V2
+
+client and server are interacting fine. 
+Functionality:
+1. sending and receiving files
+2. client can ask server to perform operations. all remote server-side operations on are printed on client-side
+3. all client-side operations work fine.
+
+TO DOS: 
+1. Handle cd, unsetenv, setenv, exit
+2. remove compile and run and use them as normal remote operations

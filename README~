@@ -1,0 +1,3 @@
+Created: Fall '11
+
+A simple client-server model (built from scratch) that allows you to send programs from client to server, compile them and run them on the server side, and then send the output and logs back to the client.

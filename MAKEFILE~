@@ -1,0 +1,21 @@
+CC = gcc
+CFLAGS = -g -Wall -W -Wno-unused-function -Wno-unused-parameter -Werror
+RM = rm
+
+SRCS = lex.c syn.c dynarray.c common.c
+OBJS = $(SRCS:.c=.o)
+BINARIES = client server
+
+all: client server
+
+clean:
+	-$(RM) -f *.o *.c~ *.h~ *.purify core* rcvd $(BINARIES)
+
+%.o: $(SRCS)
+     $(CC) $(CFLAGS) -c $< -o $@
+
+client: client.o $(OBJS)
+	$(CC) $(CCFLAGS) -o $@ $^ 
+
+server: server.o $(OBJS)
+	$(CC) $(CCFLAGS) -o $@ $^ 

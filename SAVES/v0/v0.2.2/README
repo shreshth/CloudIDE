@@ -1,0 +1,13 @@
+Client and server interact very well now.
+Server can handle multiple clients.
+Clients can request all local and remote operations. 
+
+To dos:
+Short term:
+1. Multiple clients
+Main problem: Different clients can access each other's workspaces and change stuff. For example, if a client has done "cd temp", another client can do "rm -r temp" crashing the first client.
+Seconday problem: All clients may end up using the same text file for redirection of stdin and stdout (since they run in different processes, they all have a unique set of file descriptors, so usually all clients write to srv4.out.
+
+Long-term:
+1. Graphics
+2. Distributed hashing
